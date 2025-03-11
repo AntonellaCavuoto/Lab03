@@ -18,7 +18,7 @@ class Dictionary:
         # ./prova/testo.txt
 
     def printAll(self):
-        pass
+        print(self.dizionario)
 
 
     @property
