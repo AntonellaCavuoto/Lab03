@@ -12,6 +12,8 @@ class SpellChecker:
         frase = replaceChars(txtIn)
         campi = frase.lower().split(" ")
         self.m.searchWord(words=campi, language=language)
+        self.m.searchWordLinear(campi, language)
+        self.m.searchWordDichotomic(campi, language)
     def printMenu(self):
         print("______________________________\n" +
               "      SpellChecker 101\n"+
